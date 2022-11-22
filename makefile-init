@@ -1,0 +1,20 @@
+all: init
+
+init:
+	python -m pip install --user --upgrade pip
+	pip install --upgrade -r requirements.txt
+
+# .PHONY: test
+# test:
+# 	pytest
+
+# .PHONY: lint
+# lint:
+# 	flake8
+
+# .PHONY : clean
+# clean:
+# #	find . -type f -name *.pyc -delete
+# #	find . -type d -name __pycache__ -delete
+# 	rm -rf __pycache__
+# 	rm -rf .pytest_cache
